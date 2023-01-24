@@ -42,8 +42,10 @@
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Hands Examples\Scripts\CycleHandPairs.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\3D Interaction\Scripts\SimpleAnchorFeedback.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\3D Interaction\Scripts\TransformRotationHandle.cs" />
+     <Compile Include="Assets\Scripts\leapRotrixCantroller.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\3D Interaction\Scripts\TransformTranslationHandle.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Core Examples\InertiaPostProcessProvider.cs" />
+     <Compile Include="Assets\Scripts\endRing.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Common Example Assets\Scripts\SimpleInteractionGlow.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\3D Interaction\Scripts\TransformTool.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Common Example Assets\Scripts\ScaleOnEnable.cs" />
@@ -61,7 +63,6 @@
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Common Example Assets\Scripts\SimpleInteractionEmission.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Menus &amp; UI\MovePoseExample.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Core Examples\SpawnObjectAtPosition.cs" />
-     <Compile Include="Assets\Scripts\endRing.cs" />
      <None Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Hands Examples\Hands (URP)\Shaders\URP_ToonBasicOutline.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.4f1\2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
