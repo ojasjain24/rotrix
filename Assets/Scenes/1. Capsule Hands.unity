@@ -2206,7 +2206,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 94
+  m_Constraints: 30
   m_CollisionDetection: 0
 --- !u!114 &1525578625
 MonoBehaviour:
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1525578596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c85a91eb32dac6942bed59a64dd35ced, type: 3}
+  m_Script: {fileID: 11500000, guid: f14375e9b5e4d194fb200d92cfe54680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LeapServiceProvider: {fileID: 1887810485}

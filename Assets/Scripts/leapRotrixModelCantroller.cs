@@ -2,7 +2,7 @@ using Leap;
 using Leap.Unity;
 using UnityEngine;
 
-public class leapRotrixCantroller : MonoBehaviour
+public class leapRotrixModelCantroller : MonoBehaviour
 {
     public LeapServiceProvider LeapServiceProvider;
     public Rigidbody arm;
@@ -19,7 +19,7 @@ public class leapRotrixCantroller : MonoBehaviour
             float _armWidth = _arm.Width;
             Vector3 _elbowPosition = _arm.ElbowPosition;
 
-            arm.GetComponent<Transform>().localEulerAngles = new Vector3(arm.GetComponent<Transform>().localEulerAngles.x, _hand.PalmPosition.y*500, arm.GetComponent<Transform>().localEulerAngles.z);
+            arm.GetComponent<Transform>().localEulerAngles = new Vector3(arm.GetComponent<Transform>().localEulerAngles.x, _hand.PalmPosition.y * 500, arm.GetComponent<Transform>().localEulerAngles.z);
 
         }
     }

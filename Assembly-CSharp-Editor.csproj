@@ -643,20 +643,29 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.WindowsMixedReality">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ultraleap.Tracking.Hands">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Hands.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -673,65 +682,56 @@
     <Reference Include="UnityEngine.SpatialTracking">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Management">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.InteractionSubsystems">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.InteractionSubsystems.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARSubsystems.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARSubsystems">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.MagicLeap">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEngine.XR.MagicLeap.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.XR.MagicLeap">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.XR.MagicLeap.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.WindowsMixedReality.Editor">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.WindowsMixedReality">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.WindowsMixedReality.dll</HintPath>
+    <Reference Include="UnityEditor.XR.MagicLeap">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.XR.MagicLeap.dll</HintPath>
     </Reference>
-    <Reference Include="Ultraleap.Tracking.Hands">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Hands.dll</HintPath>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ultraleap.Tracking.Core.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ultraleap.Tracking.Hands.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Hands.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Ultraleap.Tracking.InteractionEngine">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.InteractionEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Ultraleap.Tracking.InteractionEngine.Editor">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.InteractionEngine.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Ultraleap.Tracking.Core">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Core.dll</HintPath>
     </Reference>
     <Reference Include="LeapMotion.LeapCSharp">
         <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\LeapMotion.LeapCSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Ultraleap.Tracking.Core.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Ultraleap.Tracking.Hands.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.Hands.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Ultraleap.Tracking.InteractionEngine">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.InteractionEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="Ultraleap.Tracking.InteractionEngine.Editor">
-        <HintPath>E:\UnityProjects\Rotrix\Library\ScriptAssemblies\Ultraleap.Tracking.InteractionEngine.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
