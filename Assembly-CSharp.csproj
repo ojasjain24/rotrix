@@ -65,6 +65,9 @@
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Common Example Assets\Scripts\SimpleInteractionEmission.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Menus &amp; UI\MovePoseExample.cs" />
      <Compile Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Core Examples\SpawnObjectAtPosition.cs" />
+     <Compile Include="Assets\Scripts\RotricsCVController.cs" />
+     <Compile Include="Assets\Scripts\locationDataModel.cs" />
+     <Compile Include="Assets\Scripts\converter.cs" />
      <None Include="Assets\Samples\Ultraleap Tracking\6.2.1\Examples\Example Assets\Hands Examples\Hands (URP)\Shaders\URP_ToonBasicOutline.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.4f1\2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
