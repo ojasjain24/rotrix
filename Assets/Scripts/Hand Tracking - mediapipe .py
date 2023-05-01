@@ -3,6 +3,11 @@ import cv2
 import time
 import mediapipe as mp
 import socket
+import time
+
+# Main Code
+# Python file that detects the hands and gestures using media pipe.
+# Acts as a client and sends the data to the C# server using sockets.
 
 pre_frame_time = 0
 new_frame_time = 0
@@ -17,7 +22,7 @@ cam = cv2.VideoCapture(0)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 UDP_IP = "127.0.0.1"
-UDP_PORT = 5065
+UDP_PORT = 8000
 
 while True:
     sussess, image = cam.read()
@@ -33,8 +38,11 @@ while True:
             mpDraw.draw_landmarks(image, handLms, mpHands.HAND_CONNECTIONS)
         tipLocation = ""
         for hand_landmarks in result.multi_hand_landmarks:
-            tipLocation = {'x': hand_landmarks.landmark[mpHands.HandLandmark.RING_FINGER_TIP].x * image_width,
-                           'y': hand_landmarks.landmark[mpHands.HandLandmark.RING_FINGER_TIP].y * image_height}
+            tipLocation = {'x': hand_landmarks.landmark[mpHands.HandLandmark.RING_FINGER_TIP].x * image_width/10,
+                           'y': hand_landmarks.landmark[mpHands.HandLandmark.RING_FINGER_TIP].y * image_height/20,
+                           'z': hand_landmarks.landmark[mpHands.HandLandmark.RING_FINGER_TIP].z * 10,
+                           'time': time.time()*1000.0
+                           }
 
         sock.sendto(str(tipLocation).encode(), (UDP_IP, UDP_PORT))
 
@@ -45,7 +53,7 @@ while True:
     cv2.putText(image, "FPS: "+str(int(FPS)), (0, 40),
                 font, 1, (100, 255, 0), 3, cv2.LINE_AA)
 
-    cv2.imshow('Thanh HoangVan - Hand Gesture Recognition', image)
+    cv2.imshow('Hand Gesture Recognition', image)
     k = cv2.waitKey(1)
     if k % 256 == 27:
         break

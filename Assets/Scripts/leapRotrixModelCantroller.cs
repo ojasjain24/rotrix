@@ -1,7 +1,10 @@
+using System;
 using Leap;
 using Leap.Unity;
 using UnityEngine;
 
+// Main Code
+// This code controls the robotic arm digital twin using leap motion.
 public class leapRotrixModelCantroller : MonoBehaviour
 {
     public LeapServiceProvider LeapServiceProvider;
@@ -14,6 +17,7 @@ public class leapRotrixModelCantroller : MonoBehaviour
     {
         for (int i = 0; i < LeapServiceProvider.CurrentFrame.Hands.Count; i++)
         {
+
             Hand _hand = LeapServiceProvider.CurrentFrame.Hands[i];
 
             Arm _arm = _hand.Arm;
@@ -37,14 +41,14 @@ public class leapRotrixModelCantroller : MonoBehaviour
             float alpha = theta + beta;
             float baseAngle = Mathf.Atan(Zval / Xval) * 20;
             // print("THETA : " + theta * 180 / Mathf.PI);
-
-
-
             rotricsLowerBone.GetComponent<Transform>().localRotation = Quaternion.Euler(-theta * 180 / Mathf.PI, 0, 0);
 
             rotricsUpperBone.GetComponent<Transform>().localRotation = Quaternion.Euler(alpha * 180 / Mathf.PI, 0, 0);
 
             rotricsBase.GetComponent<Transform>().localEulerAngles = new Vector3(-90, 0, baseAngle * 180 / Mathf.PI);
+            long milliseconds = DateTimeOffset.Now.ToUnixTimeMilliseconds();
+            print(milliseconds);
+
             // robotBase.localEulerAngles = new Vector3(robotBase.localEulerAngles.x, baseYRot, robotBase.localEulerAngles.z);
 
         }

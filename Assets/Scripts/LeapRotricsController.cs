@@ -3,6 +3,8 @@ using Leap.Unity;
 using UnityEngine;
 using System.IO.Ports;
 
+// Main Code
+// This code controls the robotic arm using leap motion.
 public class LeapRotricsController : MonoBehaviour
 {
     private SerialPort data_stream = new SerialPort("COM9", 115200);
