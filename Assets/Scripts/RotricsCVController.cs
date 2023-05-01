@@ -9,6 +9,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.IO.Ports;
+
+
+// Main Code
+// This code controls the robotic arm and its digital twin using computer vision.
+// Acts as a server, recieves hands movement data from python client.
+
 public class RotricsCVController : MonoBehaviour
 {
     Thread receiveThread;
@@ -19,11 +26,13 @@ public class RotricsCVController : MonoBehaviour
     public Rigidbody rotricsUpperBone;
     float Xval;
     float Yval;
-    List<Location> locations;
-    // Location locationData;
+    float Zval;
+    private SerialPort data_stream = new SerialPort("COM8", 115200);
+
     void Start()
     {
-        port = 5065;
+        data_stream.Open();
+        port = 8000;
         InitUDP();
     }
 
@@ -48,13 +57,10 @@ public class RotricsCVController : MonoBehaviour
                 String datastfy = Encoding.UTF8.GetString(data);
 
                 JObject json = JObject.Parse(datastfy);
-
-                // locations = JsonConvert.DeserializeObject<List<Location>>(datastfy); 
                 Xval = float.Parse(json["x"].ToString());
                 Yval = float.Parse(json["y"].ToString());
-                // locationData = JsonUtility.FromJson<Location>(Encoding.UTF8.GetString(data).ToString());
-                // print(Xval+", "+Yval);
-                // jsonUtils.getJson(datastfy);
+                Zval = float.Parse(json["z"].ToString());
+                print(json["time"]);
             }
             catch (Exception e)
             {
@@ -66,7 +72,6 @@ public class RotricsCVController : MonoBehaviour
 
     void Update()
     {
-        float Zval = 0;
         float l1 = rotricsLowerBone.GetComponent<MeshFilter>().mesh.bounds.extents.y;
         float l2 = rotricsUpperBone.GetComponent<MeshFilter>().mesh.bounds.extents.y;
         // print(Xval + ", " + Yval + ", " + l1 + ", " + l2);
@@ -76,7 +81,7 @@ public class RotricsCVController : MonoBehaviour
 
         float alpha = theta + beta;
         float baseAngle = Mathf.Atan(Zval / Xval) * 20;
-        print("THETA : " + theta * 180 / Mathf.PI);
+        // print("THETA : " + theta * 180 / Mathf.PI);
 
 
 
@@ -84,7 +89,10 @@ public class RotricsCVController : MonoBehaviour
 
         rotricsUpperBone.GetComponent<Transform>().localRotation = Quaternion.Euler(alpha * 180 / Mathf.PI, 0, 0);
 
-        // rotricsBase.GetComponent<Transform>().localEulerAngles = new Vector3(-90, 0, baseAngle * 180 / Mathf.PI);
+        rotricsBase.GetComponent<Transform>().localEulerAngles = new Vector3(-90, 0, baseAngle * 180 / Mathf.PI);
+        data_stream.WriteLine("G1 X" + Xval*20);
+        data_stream.WriteLine("G1 Y" + Yval*20);
+        data_stream.WriteLine("G1 Z" + Zval*20);
         // robotBase.localEulerAngles = new Vector3(robotBase.localEulerAngles.x, baseYRot, robotBase.localEulerAngles.z);
 
     }

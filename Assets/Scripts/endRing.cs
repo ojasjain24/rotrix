@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// This code is to control the robotic arm model in the shop floor scene.
+// When a object collides with the robotic arm end ring, the robotic arm will turn accoriding to the color of the block.
 public class endRing : MonoBehaviour
 {
     public float speed = 100;

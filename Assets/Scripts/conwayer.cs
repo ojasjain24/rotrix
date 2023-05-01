@@ -8,13 +8,6 @@ public class conwayer : MonoBehaviour
     public Vector3 direction;
     public List<GameObject> onBelt;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         for (int i = 0; i <= onBelt.Count - 1; i++)
@@ -23,13 +16,11 @@ public class conwayer : MonoBehaviour
         }
     }
 
-    // When something collides with the belt
     private void OnCollisionEnter(Collision collision)
     {
         onBelt.Add(collision.gameObject);
     }
 
-    // When something leaves the belt
     private void OnCollisionExit(Collision collision)
     {
         onBelt.Remove(collision.gameObject);
